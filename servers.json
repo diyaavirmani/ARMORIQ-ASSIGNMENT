@@ -1,0 +1,17 @@
+{
+  "servers": [
+    {
+      "id": "ops-console",
+      "label": "Ops Console (custom)",
+      "transport": "stdio",
+      "command": "node",
+      "args": ["packages/mcp-server/dist/index.js"]
+    },
+    {
+      "id": "deepwiki",
+      "label": "DeepWiki (remote)",
+      "transport": "http",
+      "url": "https://mcp.deepwiki.com/mcp"
+    }
+  ]
+}

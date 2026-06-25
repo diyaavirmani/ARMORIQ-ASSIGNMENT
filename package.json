@@ -1,0 +1,22 @@
+{
+  "name": "armoriq-guarded-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A guarded AI agent with MCP support: an LLM tool-use loop gated by a standalone policy engine, controlled live from an admin dashboard.",
+  "workspaces": [
+    "packages/agent",
+    "packages/mcp-server",
+    "packages/dashboard"
+  ],
+  "scripts": {
+    "build:mcp": "npm run build --workspace packages/mcp-server",
+    "build:agent": "npm run build --workspace packages/agent",
+    "dev:agent": "npm run dev --workspace packages/agent",
+    "dev:dashboard": "npm run dev --workspace packages/dashboard",
+    "build": "npm run build:mcp && npm run build:agent && npm run build --workspace packages/dashboard",
+    "start": "npm run start --workspace packages/agent"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@armoriq/ops-console-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A creative, security-themed custom MCP server simulating a company's ops console. Exposes deliberately risky tools so the policy layer has something meaningful to guard.",
+  "type": "module",
+  "bin": {
+    "ops-console-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
