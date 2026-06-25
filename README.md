@@ -10,7 +10,7 @@ Built as the ArmorIQ SWE intern assignment.
 
 | Resource | Link |
 | - | - |
-| Deployed app | _to be added_ |
+| Deployed app | armoriq-assignment-production.up.railway.app |
 | Demo video (5 min) | _to be added_ |
 
 ## Architecture
